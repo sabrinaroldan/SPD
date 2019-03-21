@@ -9,3 +9,19 @@ void loop (){
 	delay(1000);
 }
 
+void setup()
+{
+  pinMode(13, OUTPUT);
+}
+
+void loop()
+{
+  int i;
+  for(i=100;i<1000;i*2){
+    digitalWrite(13,HIGH);
+    delay(i);
+    digitalWrite(13, LOW);
+    delay(i);
+    i++;
+  }
+}
