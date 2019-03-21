@@ -3,7 +3,9 @@ void setup(){
 }
 
 void loop (){
-	digitalWrite(13,HIGH);
-	digitalWrite(13,LOW);
+	digitalWrite(13,HIGH); //prendido
+	delay(1000);		//se queda prendido un segundo más. 99.99% high 
+	digitalWrite(13,LOW); //apagado
+	delay(1000);
 }
 
